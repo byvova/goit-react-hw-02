@@ -1,7 +1,8 @@
 
 
 
-export const Feedback = ({ response, total }) => {
+export const Feedback = ({ response, total, totalPercent }) => {
+
 
     return (
         <>
@@ -9,7 +10,7 @@ export const Feedback = ({ response, total }) => {
             <h2>Neutral: {response.neutral}</h2>
             <h2>Bad: {response.bad}</h2>
             <h2>Total: {total}</h2>
-            <h2>Positive: </h2>
+            <h2>Positive: {totalPercent}%</h2>
         </>
     )
 }
