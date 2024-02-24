@@ -44,7 +44,7 @@ function App() {
 
   const totalFeedback = response.bad + response.good + response.neutral;
 
-  const totalPercent = Math.round(((response.good + response.bad) / totalFeedback) * 100);
+  const totalPercent = Math.round(((response.good + response.neutral) / totalFeedback) * 100);
   return (
     <>
       <Description />
