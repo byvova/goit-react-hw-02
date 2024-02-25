@@ -1,7 +1,7 @@
-export const Options = ({ feedback, resetFeedback, click }) => {
+export const Options = ({ onFeedbackSelect, resetFeedback, click }) => {
     const handleButtonClick = (feedbackType) => {
         click(true);
-        feedback(feedbackType);
+        onFeedbackSelect(feedbackType);
     };
 
     const handleResetClick = () => {
